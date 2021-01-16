@@ -1,6 +1,10 @@
 Script para obtener los totales a partir de los PDF del S-21 
 
-Modo de uso 
+## Requisitos
+
+Powershell 7 o superior
+
+## Modo de uso 
 
 Crear archivo `config.json` en base a `config.sample.json`
 
