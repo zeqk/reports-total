@@ -16,16 +16,16 @@ function Install-IText {
 
         # nuget install itext7
         Invoke-Expression "$PSScriptRoot\nuget.exe install iText7 -Version 7.1.12 -OutputDirectory $PSScriptRoot\lib"
+    }
 
         
-        # requires itextsharp.dll
+    # requires itextsharp.dll
 
-        Add-Type -Path "$PSScriptRoot\lib\itext7.7.1.12\lib\netstandard1.6\itext.kernel.dll"
-        Add-Type -Path "$PSScriptRoot\lib\itext7.7.1.12\lib\netstandard1.6\itext.forms.dll"
-        Add-Type -Path "$PSScriptRoot\lib\Common.Logging.3.4.1\lib\netstandard1.3\Common.Logging.dll"
-        Add-Type -Path "$PSScriptRoot\lib\Common.Logging.Core.3.4.1\lib\netstandard1.0\Common.Logging.Core.dll"
-        Add-Type -Path "$PSScriptRoot\lib\Portable.BouncyCastle.1.8.5\lib\netstandard1.3\BouncyCastle.Crypto.dll"
-    }
+    Add-Type -Path "$PSScriptRoot\lib\itext7.7.1.12\lib\netstandard1.6\itext.kernel.dll"
+    Add-Type -Path "$PSScriptRoot\lib\itext7.7.1.12\lib\netstandard1.6\itext.forms.dll"
+    Add-Type -Path "$PSScriptRoot\lib\Common.Logging.3.4.1\lib\netstandard1.3\Common.Logging.dll"
+    Add-Type -Path "$PSScriptRoot\lib\Common.Logging.Core.3.4.1\lib\netstandard1.0\Common.Logging.Core.dll"
+    Add-Type -Path "$PSScriptRoot\lib\Portable.BouncyCastle.1.8.5\lib\netstandard1.3\BouncyCastle.Crypto.dll"
 }
 
 function GetPublisherMonthReport 
